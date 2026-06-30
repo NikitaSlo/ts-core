@@ -1,7 +1,7 @@
 import {firstOf} from "./firstOf";
 import { describe, it, expect } from "@jest/globals";
 
-describe("FIrst Array ELement", () => {
+describe("First array element", () => {
     it("must return first element", () => {
         expect(firstOf([1,2,3])).toBe(1);
         expect(firstOf(['a', 'b', 'c'])).toBe('a');
@@ -11,3 +11,4 @@ describe("FIrst Array ELement", () => {
         expect(firstOf([])).toBeUndefined();
     });
 });
+
