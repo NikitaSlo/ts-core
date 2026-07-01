@@ -26,9 +26,3 @@ export function groupBy<T, K extends keyof T>(
         return result;
     }, {});
 }
-
-const user = [{ name: 'Alice', age: 25, role: 'admin' },
-        { name: 'Bob', age: 30, role: 'user' },
-        { name: 'Charlie', age: 25, role: 'user' }]
-
-console.log(groupBy(user, "age"))
